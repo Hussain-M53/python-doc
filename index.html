@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="container">
+<nav id="navbar">
+  <header class="h1">python documentation</header>
+  <ul id="nav-ul">
+    <li><a class="nav-link"href="#home">Home</a></li>
+    <li><a class="nav-link"href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link"href="#Installation">Installation</a></li>
+    <li><a class="nav-link"href="#Python_Syntax">Python Syntax</a></li>
+    <li><a class="nav-link"href="#control_flow">Control Flow</a></li>
+    <li ><a class="nav-link"href="#Python_Functions">Python Functions</a></li>
+  </ul>
+</nav>
+  <main id="main-doc">
+    
+    <section class="main-section" id="home"><header class="a">home</header><img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" ></section>
+   <section class="main-section" id="Introduction" ><header><h2>Introduction</h2></header>
+     <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+     <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, <a href="https://www.python.org/">https://www.python.org/</a>, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+     <p class="article">Python is a programming language that lets you work quickly and integrate systems more effectively.</p>
+   </section>
+   <section class="main-section" id="Installation"><header><h2>Installation</h2></header>
+     <p>To write and execute Python programs you will fist need todownload and intall the latest version of Python from the Python website: Python Download</p>
+     <h2>Where is Python used?</h2>
+     <p>Python is used successfully in thousands of real-world business applications around the world, including many large and mission critical systems. Here's where':</p>
+     <ul class="main-ul">
+       <li>YouTube</li>
+       <li>Google</li>
+       <li>Industrial Light & Magic</li>
+       <li>EVE Online</li>
+       <li>Firaxis Games</li>
+       </ul>
+     <p>This is just a small list of the numerous places Python is implemented.</p>
+   </section>
+   <section class="main-section" id="Python_Syntax"><header id="Python_Syntax"><h2>Python Syntax</h2></header>
+     <p>Python Syntax is the set of rules that defines how a Python program will be written and interpreted (by both the runtime system and by human readers)</p>
+     <h3>Hello World</h3>
+     <p>To get started writing Python, open the Python interpreter and write your first "Hello world" Python code:</p>
+     <p class="article"><code>print("Helo World")</code></p>
+     <p>Hit Enter and watch the magic happen
+</p>
+     <h3>Variables</h3>
+     <ul class="main-ul">
+       <li>You can use any letter, the special characters "_" and every number provided you do not start with it.</li>
+       <li>White spaces and signs with special meanings in Python, as "+" and "-" are not allowed.</li>
+       <li>Remember that variable names are case sensitive.</li>
+       <li>Python is dynamically typed, which means that you don't have to declare what type each variable is.</li>
+       <li>In Python, variables are a storage placeholder for texts and numbers.</li>
+       <li>It must have a name so that you are able to find it again.</li>
+       <li>The variable is always assigned with the equal sign, followed by the value of the variable.</li>
+       <li>There are some reserved words for Python and can not be used as variable name.</li>
+       <li>The value of the variable can be changed later on.
+</li>
+     </ul>
+   </section>
+   <section class="main-section" id="control_flow"><header>
+     <h2>Control Flow</h2>
+   </header>
+     <p>A program’s control flow is the order in which the program’s code executes. The control flow of a Python program is regulated by conditional statements, loops, and function calls.</p>
+     <h3>The If Statement</h3>
+     <p>Often, you need to execute some statements only if some condition holds, or choose statements to execute depending on several mutually exclusive conditions. The Python compound statement if, which uses if, elif, and else clauses, lets you conditionally execute blocks of statements. Here’s the if statement:</p>
+    <p class="article">
+  <code>  number = 23 <br></code>
+  <code>  guess = int(input('Enter an integer : '))<br></code>
+ <code>  if guess == number:
+      <br></code><code> print('Congratulations!')
+     <br></code><code> elif guess < number:
+     <br></code> <code>  print('A little higher')
+     <br></code><code>  else:<br></code>
+    <code>   print('A little lower')</code></p>
+     <p>The elif and else clauses are optional. Note that unlike some languages, Python does not have a switch statement, so you must use if, elif, and else for all conditional processing.</p>
+     <h3>The While Statement</h3>
+     <p>The while statement in Python supports repeated execution of a statement or block of statements that is controlled by a conditional expression. Here’s the while statement:</p>
+     <p class="article">
+ <code>i = 1 <br> </code>
+ <code>while i < 6:<br> </code>
+  <code>print(i)<br> </code>
+   <code> i += 1 </code>
+    </p>
+     <p>The loop body should contain code that eventually makes the loop condition false, or the loop will never end unless an exception is raised or the loop body executes a break statement. A loop that is in a function’s body also ends if a return statement executes in the loop body, as the whole function ends in this case.</p>
+     <h3>The For Loop</h3>
+     <p>The for statement in Python supports repeated execution of a statement or block of statements that is controlled by an iterable expression. Here’s the for statement:</p>
+     <p class="article">
+       <code>fruits = ["apple", "banana", "cherry"]</code><br>
+       <code>for x in fruits:</code><br>
+       <code>print(x)</code>
+     </p>
+     <h3>Iterators</h3>
+     <p>An iterator is any object i such that you can call i .next( ) without any arguments. i .next( ) returns the next item of iterator i, or, when iterator i has no more items, raises a StopIteration exception.</p>
+     <p class="article">
+       <code>for x in c:</code><br>
+       <code>statement(s)</code>
+     </p>
+   </section>
+   <section class="main-section" id="Python_Functions"><header><h2>Python Functions</h2></header>
+     <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+     <h3>Creating A Function</h3>
+     <p>In Python a function is defined using the def keyword:</p>
+     <p class="article">
+       <code>def my_function():</code><br>
+       <code>print("Hello from a function")</code>
+     </p>
+     <h3>Caling A Function</h3>
+     <p>To call a function, use the function name followed by parenthesis:</p>
+     <p class="article">
+       <code> def my_function():</code><br>
+       <code> print("Hello from a function")</code><br>
+       <code> my_function()</code>
+     </p>
+     <h3>Parameters</h3>
+     <p>Information can be passed to functions as parameter. Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma. The following example has a function with one parameter (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+     <p class="article">
+       <code>def my_function(fname):</code><br>
+       <code>print(fname + " Refsnes")</code><br>
+       <code>my_function("Emil")</code><br>
+       <code>my_function("Emil")</code><br>
+       <code> my_function("Linus")</code>
+     </p>
+     <h3> Return values</h3>
+     <p>To let a function return a value, use the return statement:</p>
+     <p class="article">
+       <code> def my_function(x):</code><br>
+       <code>return 5 * x</code><br>
+       <code>print(my_function(3))</code><br>
+       <code>print(my_function(5))</code><br>
+       <code>print(my_function(9))</code>
+     </p>
+   </section>
+  </main>
+</div>
+ 
+</body>
+</html>
